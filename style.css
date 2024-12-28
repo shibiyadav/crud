@@ -1,0 +1,94 @@
+table{
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(124, 154, 167);
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid rgb(204,200,200);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thead > tr{
+    background-color: rgb(204,200,200);
+}
+
+input[type="text"], input[type="number"] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 4px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #4b99d8;
+}
+
+button:hover {
+    background: #4b99d8;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+    table.list {
+        display: block;
+        width: 100%;
+        overflow-x: auto; /* Horizontal scroll for tables if needed */
+        border-spacing: 0;
+    }
+    td, th {
+        padding: 10px;
+        font-size: 0.9rem;
+        word-wrap: break-word; /* Prevent content from overflowing */
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    input[type="text"], input[type="number"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type="submit"], input[type="reset"] {
+        width: 100%;
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    button {
+        font-size: 1rem;
+    }
+    tr:nth-child(even), table.list thead > tr {
+        background-color: rgb(204,200,200);
+    }
+}
